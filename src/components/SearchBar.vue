@@ -1,20 +1,26 @@
 <template>
-    <div>
-        <input @input="onInput" />
-    </div>
+  <div>
+    <input @input="onInput" />
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'SearchBar',
+  name: "SearchBar",
   methods: {
-      onInput: function(e) {
-          this.$emit('termChange', e.target.value)
-      }
-  },
-
+    onInput: function(e) {
+      this.$emit("termChange", e.target.value);
+    }
+  }
 };
 </script>
 
-<style>
-</styl>e
+<style scoped>
+input {
+  width: 75%;
+}
+div {
+  text-align: center;
+  margin: 1.5rem;
+}
+</style>
