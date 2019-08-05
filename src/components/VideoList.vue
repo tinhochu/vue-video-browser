@@ -1,10 +1,10 @@
 <template>
-  <ul class="list-group">
+  <ul class="list-group col-md-4">
     <VideoListItem
       v-for="video in videos"
       :video="video"
       :key="video.etag"
-      @:videoSelect="onVideoSelect"
+      @videoSelect="onVideoSelect"
     ></VideoListItem>
   </ul>
 </template>
